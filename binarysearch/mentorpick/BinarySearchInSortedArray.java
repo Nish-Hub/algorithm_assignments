@@ -2,7 +2,7 @@
 
 // Approach 1: 
 int findingIdx(int arr[], int k) {
-  //0, 12, 25 , 11
+  // Test Case for dry run : arr{0, 12, 25} , k=11
   if(null == arr)
     return -1;
   
@@ -13,7 +13,7 @@ int findingIdx(int arr[], int k) {
   
   if(diff <0) return -1;
   
-  int mid = (end - start)/2 + start; // 2-0/2 + 0 = 1
+  int mid = (end - start)/2 + start; // 2-0/2 + 0 = 1  . TODO : This formula simplifies to end+start/2 , then why not use it directly .
   boolean goLeft = false;
   int result =-1 ;
   
