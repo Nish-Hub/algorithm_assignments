@@ -1,6 +1,6 @@
 // Ques : https://mentorpick.com/classes/5fd54e256910784c40dcda22/problem/submit/59c1ccf7cf7f4121025ef1e9
 
-// Approach 1: 
+// Approach 1: Iterative approach
 int findingIdx(int arr[], int k) {
   // Test Case for dry run : arr{0, 12, 25} , k=11
   if(null == arr)
