@@ -1,4 +1,42 @@
-// Ques : https://mentorpick.com/classes/5fd54e256910784c40dcda22/problem/submit/59c1ccf7cf7f4121025ef1e9
+/* Ques : https://mentorpick.com/classes/5fd54e256910784c40dcda22/problem/submit/59c1ccf7cf7f4121025ef1e9
+Binary Search In Sorted Array
+(author: Sandeep)
+[Score: 20]
+PROBLEM STATEMENT	Given a sorted array of distinct integers and an element K,  return index of K in the array (location where it is found);  If K is not there in array, return -1.
+INPUT FORMAT	Line 1:  Integer T - Number of test cases.
+Each test case consists of following lines:
+Test Case Line 1:  Integer N - Number of elements in array.
+Test Case Line 2:  N space separated integers representing array elements.
+Test Case Line 3:  Integer Q - Number of queries on array.
+Test Case Line 4:  Q space separated integers K1 K2 ... KQ for which we need to return the index.
+OUTPUT FORMAT	For each test case print a separate line of output containing Q space separated indices of array for each given Query integer Ki
+CONSTRAINTS	1 <= T <= 10
+INT_MIN <= A[i], Ki <= INT_MAX
+0 <= N, Q <= 108
+COMPLEXITIES	Expected Time Complexity : O(log2N)
+Allowed Space Complexity: O(N), Recursion Call Stack
+HINT VIDEO
+
+
+SAMPLE INPUT	SAMPLE OUTPUT	EXPLANATION
+2
+3
+7 9 15
+2
+0 9
+5
+1 2 7 9 10
+3
+7 9 28
+
+-1 1
+2 3 -1
+
+Self explanatory
+Example Input - Output
+findingIdx([-8, -7, 2, 7], -7 ) => 1
+findingIdx([0, 12, 25], 11) => -1
+  */
 
 // Approach 1: Iterative approach
 int findingIdx(int arr[], int k) {
