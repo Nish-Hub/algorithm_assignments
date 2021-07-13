@@ -1,7 +1,7 @@
 /* Ques : https://mentorpick.com/classes/5fd54e256910784c40dcda22/problem/submit/59c1ccf7cf7f4121025ef1e9
 Binary Search In Sorted Array
-(author: Sandeep)
-[Score: 20]
+
+
 PROBLEM STATEMENT	Given a sorted array of distinct integers and an element K,  return index of K in the array (location where it is found);  If K is not there in array, return -1.
 INPUT FORMAT	Line 1:  Integer T - Number of test cases.
 Each test case consists of following lines:
@@ -18,7 +18,7 @@ Allowed Space Complexity: O(N), Recursion Call Stack
 HINT VIDEO
 
 
-SAMPLE INPUT	SAMPLE OUTPUT	EXPLANATION
+SAMPLE INPUT		
 2
 3
 7 9 15
@@ -29,9 +29,11 @@ SAMPLE INPUT	SAMPLE OUTPUT	EXPLANATION
 3
 7 9 28
 
+SAMPLE OUTPUT
 -1 1
 2 3 -1
 
+EXPLANATION
 Self explanatory
 Example Input - Output
 findingIdx([-8, -7, 2, 7], -7 ) => 1
