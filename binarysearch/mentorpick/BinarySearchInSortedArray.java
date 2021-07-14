@@ -15,7 +15,7 @@ INT_MIN <= A[i], Ki <= INT_MAX
 0 <= N, Q <= 108
 COMPLEXITIES	Expected Time Complexity : O(log2N)
 Allowed Space Complexity: O(N), Recursion Call Stack
-HINT VIDEO
+
 
 
 SAMPLE INPUT		
