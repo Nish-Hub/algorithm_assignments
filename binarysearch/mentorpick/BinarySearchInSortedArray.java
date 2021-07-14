@@ -40,7 +40,7 @@ findingIdx([-8, -7, 2, 7], -7 ) => 1
 findingIdx([0, 12, 25], 11) => -1
   */
 
-// Approach 1: Iterative approach
+# Approach 1: Iterative approach
 int findingIdx(int arr[], int k) {
   // Test Case for dry run : arr{0, 12, 25} , k=11
   if(null == arr)
@@ -76,6 +76,39 @@ int findingIdx(int arr[], int k) {
     }else
       start = mid +1 ; // right , s=m+1 , e=e
     
+     
+  }
+  
+
+   return result ;
+
+}
+
+# Approach 2 : Iterative optimised + bitwise >>
+ 
+ int findingIdx(int arr[], int k) {
+  //0, 12, 25 , 11
+  if(null == arr)
+    return -1;
+  
+  // TODO:  Return Index of unique element
+  int start =0; // 0
+  int end = arr.length -1 ; // 2
+  int result =-1 ;
+  
+  while((end - start)>=0){ // 2-0 > 0, 0-0 > 0 , false
+    
+    int mid = ((end - start) >> 1) + start ; // 0-0 / 2 + 0 = 0
+    
+    if(arr[mid] == k){ // arr[1] = 12 == 11 ? , false
+      result = mid ; 
+      break;
+    }
+    
+  	if(arr[mid] > k) // arr[1] = 12>11 ? , true
+      	 end = mid -1 ;
+    else
+      	 start = mid +1 ;
      
   }
   
