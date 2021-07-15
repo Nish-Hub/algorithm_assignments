@@ -1,3 +1,4 @@
+/*
 PROBLEM STATEMENT	Given a sorted array of integers where some values might be repeated and an element K,  return index of first occurance of K in the array (location where it is found); Return -1 if it is not found.
 INPUT FORMAT	Line 1:  Integer T - Number of test cases.
 Each test case consists of following lines:
@@ -38,7 +39,7 @@ TestCaseID	Result	Expected	Your Output	Exception
 Example Input - Output
 firstOccuranceIdx([0, 2, 9, 9, 9, 9, 15], 9 ) => 2
 firstOccuranceIdx([0, 12, 25], 11) => -1
-  
+*/  
  # Approach 1
   
 int firstOccuranceIdx(int arr[], int k) {
